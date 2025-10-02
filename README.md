@@ -5,18 +5,21 @@ Una wiki completa para **Sagas Z**, el juego de miniaturas tácticas ambientado 
 ## 🌟 Características
 
 ### 📖 **Contenido Completo**
+
 - **Guías de Facciones**: Análisis detallados de Guerreros Z, Saiyans y Ejército de Freezer
 - **Artículos Estratégicos**: Tácticas avanzadas y guías de juego
 - **Descargas**: PDFs del reglamento, cartas de facción y habilidades
 - **Army Builder**: Herramienta externa para construir listas de ejército
 
 ### 🎨 **Diseño Moderno**
+
 - **Bootstrap 5.3.3**: Framework responsive y moderno
 - **Paleta de Colores Unificada**: Naranja (#ff7900), negro y gris
 - **Tipografía**: Fuente Montserrat para una lectura óptima
 - **Mobile-First**: Completamente responsive en todos los dispositivos
 
 ### 🚀 **Tecnologías**
+
 - **HTML5**: Estructura semántica y accesible
 - **CSS3**: Variables CSS y diseño moderno
 - **Bootstrap**: Grid system y componentes
@@ -64,12 +67,14 @@ sagas-Z-web/
 ## 🎯 Secciones Principales
 
 ### 🏠 **Página Principal**
+
 - Hero section con imagen de fondo
 - Cards de noticias y actualizaciones
 - Integración con Army Builder externo
 - Navegación a todas las secciones
 
 ### ⚔️ **Ejércitos**
+
 Información detallada sobre cada facción:
 
 - **Guerreros Z**: Los defensores de la Tierra
@@ -77,6 +82,7 @@ Información detallada sobre cada facción:
 - **Ejército de Freezer**: Las fuerzas imperiales
 
 ### 📥 **Descargas**
+
 Centro organizado de recursos:
 
 - **Reglamento**: Manual básico y apéndice
@@ -84,34 +90,39 @@ Centro organizado de recursos:
 - **Cartas de Habilidad**: Entrenamiento, equipo, especiales, fuerza, mando
 
 ### 🛠️ **Army Builder**
+
 Integración con herramienta externa para:
+
 - Construcción de listas de ejército
 - Validación de reglas
 - Exportación de listas
 
 ## 🎨 Paleta de Colores
 
-| Color | Hex | Uso |
-|-------|-----|-----|
+| Color                 | Hex       | Uso                       |
+| --------------------- | --------- | ------------------------- |
 | **Naranja Principal** | `#ff7900` | Botones, enlaces, acentos |
-| **Negro Oscuro** | `#1a1a1a` | Navbar, footer |
-| **Negro Medio** | `#0d0d0d` | Fondos oscuros |
-| **Gris Oscuro** | `#2d2d2d` | Cards, contenedores |
-| **Gris Medio** | `#404040` | Elementos secundarios |
+| **Negro Oscuro**      | `#1a1a1a` | Navbar, footer            |
+| **Negro Medio**       | `#0d0d0d` | Fondos oscuros            |
+| **Gris Oscuro**       | `#2d2d2d` | Cards, contenedores       |
+| **Gris Medio**        | `#404040` | Elementos secundarios     |
 
 ## 🚀 Despliegue
 
 ### Railway (Recomendado)
+
 1. Conecta tu repositorio de GitHub
 2. Railway detecta automáticamente el proyecto estático
 3. Despliega automáticamente en cada push
 
 ### GitHub Pages
+
 1. Ve a Settings > Pages en tu repositorio
 2. Selecciona la rama `main` como fuente
 3. Tu sitio estará disponible en `https://username.github.io/repository-name`
 
 ### Netlify
+
 1. Conecta tu repositorio de GitHub
 2. Configura build settings (no necesario para sitios estáticos)
 3. Despliega automáticamente
@@ -119,6 +130,7 @@ Integración con herramienta externa para:
 ## 📱 Responsive Design
 
 El sitio está optimizado para:
+
 - **Desktop**: 1200px+
 - **Tablet**: 768px - 1199px
 - **Mobile**: 320px - 767px
@@ -128,12 +140,14 @@ Utiliza el grid system de Bootstrap para garantizar una experiencia consistente 
 ## 🔧 Desarrollo Local
 
 1. **Clona el repositorio**:
+
    ```bash
    git clone https://github.com/EnrGarVic/sagas-Z-web.git
    cd sagas-Z-web
    ```
 
 2. **Abre en tu navegador**:
+
    - Simplemente abre `index.html` en tu navegador
    - O usa un servidor local como Live Server en VS Code
 
