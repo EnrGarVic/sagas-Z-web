@@ -1,246 +1,166 @@
-# 🐲 Sagas Z Builder
+# 🐉 Sagas Z - Wiki del Juego de Miniaturas
 
-![Angular](https://img.shields.io/badge/Angular-20.3-red.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)
-![Status](https://img.shields.io/badge/Status-Active-green.svg)
+Una wiki completa para **Sagas Z**, el juego de miniaturas tácticas ambientado en el universo de Dragon Ball. Este proyecto proporciona guías detalladas, reglas, descargas y herramientas para jugadores de todos los niveles.
 
-**Constructor de ejércitos moderno para el juego de mesa Sagas Z**, desarrollado con Angular 18+ y Angular Signals para una experiencia de usuario fluida y reactiva.
+## 🌟 Características
 
-## 🎯 Características Principales
+### 📖 **Contenido Completo**
+- **Guías de Facciones**: Análisis detallados de Guerreros Z, Saiyans y Ejército de Freezer
+- **Artículos Estratégicos**: Tácticas avanzadas y guías de juego
+- **Descargas**: PDFs del reglamento, cartas de facción y habilidades
+- **Army Builder**: Herramienta externa para construir listas de ejército
 
-### ⚡ **Gestión de Estado Reactiva**
+### 🎨 **Diseño Moderno**
+- **Bootstrap 5.3.3**: Framework responsive y moderno
+- **Paleta de Colores Unificada**: Naranja (#ff7900), negro y gris
+- **Tipografía**: Fuente Montserrat para una lectura óptima
+- **Mobile-First**: Completamente responsive en todos los dispositivos
 
-- **Angular Signals** para un estado predecible y eficiente
-- Actualizaciones automáticas de la interfaz
-- Sin dependencia de RxJS para el estado local
+### 🚀 **Tecnologías**
+- **HTML5**: Estructura semántica y accesible
+- **CSS3**: Variables CSS y diseño moderno
+- **Bootstrap**: Grid system y componentes
+- **JavaScript**: Interactividad y navegación mejorada
 
-### 🎨 **Interfaz Moderna**
-
-- Diseño responsive con Bootstrap
-- Sintaxis de templates Angular 17+ (control flow)
-- Componentes standalone reutilizables
-
-### 📊 **Funcionalidades del Builder**
-
-- ✅ Selección de facciones y límites de puntos
-- ✅ Catálogo completo de unidades por facción
-- ✅ Sistema de mejoras con restricciones inteligentes
-- ✅ Validación automática de límites de puntos
-- ✅ Cálculo dinámico de costes totales
-- ✅ Exportación a PDF profesional
-
-### 🔧 **Sistema de Mejoras Avanzado**
-
-- Restricciones por facción, unidad y categoría
-- Slots múltiples para el mismo tipo de mejora
-- Validación automática de compatibilidad
-- Descripciones detalladas de cada mejora
-
-## 🚀 Instalación y Uso
-
-### Prerrequisitos
-
-- Node.js 18+
-- npm o yarn
-- Angular CLI
-
-### Instalación
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/EnrGarVic/sagas-z-builder.git
-cd sagas-z-builder
-
-# Instalar dependencias
-npm install
-
-# Ejecutar en modo desarrollo
-npm start
-```
-
-### Comandos Disponibles
-
-```bash
-npm start          # Servidor de desarrollo (http://localhost:4200)
-npm run build      # Build de producción
-npm run test       # Ejecutar tests
-npm run watch      # Build en modo watch
-```
-
-## 📁 Arquitectura del Proyecto
+## 📁 Estructura del Proyecto
 
 ```
-src/
-├── app/
-│   ├── core/                    # Servicios principales
-│   │   └── army-store.service.ts   # Estado global con Signals
-│   ├── features/                # Pantallas principales
-│   │   ├── setup-screen/           # Configuración inicial
-│   │   ├── start-screen/           # Pantalla de inicio
-│   │   └── builder/                # Constructor de ejércitos
-│   │       ├── army-panel/         # Panel del ejército actual
-│   │       └── available-units/    # Catálogo de unidades
-│   ├── shared/                  # Componentes reutilizables
-│   │   ├── data.service.ts         # Base de datos del juego
-│   │   ├── models.ts               # Interfaces TypeScript
-│   │   ├── army-header/            # Cabecera con info del ejército
-│   │   └── upgrade-modal/          # Modal de selección de mejoras
-│   ├── app.ts                   # Componente raíz
-│   └── app.html                 # Template principal
+sagas-Z-web/
+├── index.html                    # Página principal
+├── style.css                     # Estilos globales
+├── assets/                       # Recursos estáticos
+│   ├── fondo.png                # Imagen de fondo
+│   ├── sagas-Z-builder.png      # Logo del Army Builder
+│   ├── sagasZ.png               # Logo principal
+│   ├── reglamento/              # PDFs del reglamento
+│   │   ├── Reglamento.pdf
+│   │   └── Apéndice.pdf
+│   ├── facciones/               # PDFs de facciones
+│   │   ├── Saiyans.pdf
+│   │   ├── GuerrerosZ.pdf
+│   │   └── Freezer.pdf
+│   └── habilidades/             # PDFs de habilidades
+│       ├── entrenamiento-1.pdf
+│       ├── equipo-1.pdf
+│       ├── especiales.pdf
+│       ├── fuerza-1.pdf
+│       ├── mando-1.pdf
+│       └── habilidades.pdf
+├── paginas/                     # Páginas secundarias
+│   ├── ejercitos/               # Páginas de facciones
+│   │   ├── Saiyans.html
+│   │   ├── GuerrerosZ.html
+│   │   ├── EjercitoDeFreezer.html
+│   │   └── articulos/           # Artículos detallados
+│   │       └── guerreros-z-articulo.html
+│   ├── descargas/               # Centro de descargas
+│   │   └── descargas.html
+│   └── faqs/                    # Preguntas frecuentes
+│       └── faqs.html
+└── favicon/                     # Iconos del sitio
+    └── zeta.ico
 ```
 
-## 🏗️ Tecnologías Utilizadas
+## 🎯 Secciones Principales
 
-### Frontend
+### 🏠 **Página Principal**
+- Hero section con imagen de fondo
+- Cards de noticias y actualizaciones
+- Integración con Army Builder externo
+- Navegación a todas las secciones
 
-- **Angular 20.3** - Framework principal
-- **Angular Signals** - Gestión de estado reactiva
-- **TypeScript 5.9** - Tipado estático
-- **SCSS** - Estilos avanzados
+### ⚔️ **Ejércitos**
+Información detallada sobre cada facción:
 
-### Librerías
+- **Guerreros Z**: Los defensores de la Tierra
+- **Saiyans**: La raza guerrera del espacio
+- **Ejército de Freezer**: Las fuerzas imperiales
 
-- **jsPDF** - Generación de documentos PDF
-- **Bootstrap** - Sistema de diseño
-- **RxJS** - Programación reactiva (mínimo uso)
+### 📥 **Descargas**
+Centro organizado de recursos:
 
-### Herramientas de Desarrollo
+- **Reglamento**: Manual básico y apéndice
+- **Cartas de Facción**: PDFs específicos por ejército
+- **Cartas de Habilidad**: Entrenamiento, equipo, especiales, fuerza, mando
 
-- **Angular CLI** - Tooling y build
-- **Prettier** - Formateo de código
-- **Karma + Jasmine** - Testing
+### 🛠️ **Army Builder**
+Integración con herramienta externa para:
+- Construcción de listas de ejército
+- Validación de reglas
+- Exportación de listas
 
-## 🎮 Cómo Usar la Aplicación
+## 🎨 Paleta de Colores
 
-### 1. **Pantalla de Inicio**
+| Color | Hex | Uso |
+|-------|-----|-----|
+| **Naranja Principal** | `#ff7900` | Botones, enlaces, acentos |
+| **Negro Oscuro** | `#1a1a1a` | Navbar, footer |
+| **Negro Medio** | `#0d0d0d` | Fondos oscuros |
+| **Gris Oscuro** | `#2d2d2d` | Cards, contenedores |
+| **Gris Medio** | `#404040` | Elementos secundarios |
 
-- Introducción al constructor de ejércitos
-- Botón para crear nuevo ejército
+## 🚀 Despliegue
 
-### 2. **Configuración de Ejército**
+### Railway (Recomendado)
+1. Conecta tu repositorio de GitHub
+2. Railway detecta automáticamente el proyecto estático
+3. Despliega automáticamente en cada push
 
-- Seleccionar facción disponible
-- Establecer límite de puntos
-- Nombrar el ejército
+### GitHub Pages
+1. Ve a Settings > Pages en tu repositorio
+2. Selecciona la rama `main` como fuente
+3. Tu sitio estará disponible en `https://username.github.io/repository-name`
 
-### 3. **Constructor**
+### Netlify
+1. Conecta tu repositorio de GitHub
+2. Configura build settings (no necesario para sitios estáticos)
+3. Despliega automáticamente
 
-- **Panel izquierdo**: Unidades disponibles por categoría
-- **Panel derecho**: Tu ejército actual
-- **Funciones**: Añadir/quitar unidades, gestionar mejoras
+## 📱 Responsive Design
 
-### 4. **Gestión de Mejoras**
+El sitio está optimizado para:
+- **Desktop**: 1200px+
+- **Tablet**: 768px - 1199px
+- **Mobile**: 320px - 767px
 
-- Clic en "Añadir Mejora" en cualquier unidad
-- Modal con mejoras compatibles
-- Descripciones detalladas y restricciones
+Utiliza el grid system de Bootstrap para garantizar una experiencia consistente en todos los dispositivos.
 
-### 5. **Exportación**
+## 🔧 Desarrollo Local
 
-- Botón "Exportar a PDF"
-- Descarga automática con formato profesional
-- Nombre de archivo basado en tu ejército
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/EnrGarVic/sagas-Z-web.git
+   cd sagas-Z-web
+   ```
 
-## 📋 Base de Datos del Juego
+2. **Abre en tu navegador**:
+   - Simplemente abre `index.html` en tu navegador
+   - O usa un servidor local como Live Server en VS Code
 
-El proyecto incluye una base de datos completa con:
-
-### Facciones Disponibles
-
-- 🟡 **Guerreros Z** - Héroes de la Tierra
-- 🔴 **Guerreros Saiyan** - Raza guerrera del espacio
-- 🟣 **Ejército de Freezer** - Imperio galáctico
-- 🟢 **Androides** - Creaciones del Dr. Gero
-- 🔵 **Namekianos** - Guerreros del planeta Namek
-
-### Datos Incluidos
-
-- **150+ Unidades** con estadísticas completas
-- **100+ Mejoras** con restricciones y descripciones
-- **Múltiples categorías** (Comandante, Fuerzas Especiales, etc.)
-- **Sistema de cualidades** y habilidades especiales
-
-## 🔄 Signals vs RxJS
-
-Este proyecto utiliza **Angular Signals** para demostrar las ventajas sobre RxJS tradicional:
-
-### Ventajas de Signals
-
-```typescript
-// ✅ Signals - Declarativo y simple
-readonly totalPoints = computed(() =>
-  this.armyList().reduce((sum, unit) =>
-    sum + unit.coste + unit.upgrades.reduce((upgradeSum, upgrade) =>
-      upgradeSum + upgrade.coste, 0), 0)
-);
-
-// ❌ RxJS tradicional - Más verboso
-totalPoints$ = this.armyList$.pipe(
-  map(units => units.reduce(/* ... lógica compleja ... */)),
-  shareReplay(1)
-);
-```
-
-### Beneficios Obtenidos
-
-- 🚀 **Performance**: Actualizaciones granulares
-- 🧹 **Simplicidad**: Menos boilerplate code
-- 🔒 **Type Safety**: Mejor integración con TypeScript
-- 🎯 **Debugging**: Stack traces más claros
-
-## 🤝 Contribución
-
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Haz fork del proyecto
-2. Crea una rama feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -m 'Añadir nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Abre un Pull Request
-
-## 📝 Roadmap
-
-### Próximas Funcionalidades
-
-- [ ] **Importar ejércitos** desde archivos JSON
-- [ ] **Validador de listas** según reglas oficiales
-- [ ] **Modo torneo** con restricciones especiales
-- [ ] **Calculadora de probabilidades** de dados
-- [ ] **Base de datos extendida** con expansiones
-
-### Mejoras Técnicas
-
-- [ ] **Tests unitarios** completos
-- [ ] **PWA** para uso offline
-- [ ] **Docker** para despliegue
-- [ ] **CI/CD** automatizado
+3. **Estructura de enlaces**:
+   - Todos los enlaces son relativos
+   - Los PDFs están en la carpeta `assets/`
+   - Las imágenes funcionan tanto local como en producción
 
 ## 📄 Licencia
 
-Este proyecto está bajo licencia MIT. Ver `LICENSE` para más detalles.
+Este proyecto es un trabajo de fans sin ánimo de lucro y no está afiliado con los creadores o propietarios de Dragon Ball. Todo el contenido relacionado con Dragon Ball pertenece a sus respectivos propietarios.
 
-## 👨‍💻 Autor
+## 🤝 Contribuciones
 
-**EnrGarVic** - [GitHub](https://github.com/EnrGarVic)
+Las contribuciones son bienvenidas:
+
+1. **Fork** el proyecto
+2. **Crea** una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** a la rama (`git push origin feature/AmazingFeature`)
+5. **Abre** un Pull Request
+
+## 📞 Contacto
+
+**Proyecto**: Sagas Z Wiki
+**Repositorio**: [https://github.com/EnrGarVic/sagas-Z-web](https://github.com/EnrGarVic/sagas-Z-web)
 
 ---
 
-## 🎲 Sobre Sagas Z
-
-Sagas Z es un juego de mesa de combate táctico basado en el universo de Dragon Ball Z. Este constructor de ejércitos no oficial facilita la creación y gestión de listas de ejército para partidas.
-
-> ⚠️ **Disclaimer**: Este proyecto es no oficial y no está afiliado con los creadores de Sagas Z o Dragon Ball Z.
-
----
-
-⭐ **¡Si te gusta el proyecto, dale una estrella!** ⭐
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+⭐ **¡Dale una estrella al proyecto si te resulta útil!** ⭐
