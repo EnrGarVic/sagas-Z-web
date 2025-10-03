@@ -9,16 +9,19 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../style.css" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon/zeta.ico" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="../../index.html">Wiki</a>
+        <a class="navbar-brand fw-bold" href="../../index.html">
+          <i class="fas fa-dragon me-2"></i>SAGAS Z
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,15 +39,15 @@
               <a
                 class="nav-link dropdown-toggle active"
                 href="#"
-                id="ejercitosDropdown"
+                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
               >
                 Ejércitos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Saiyans.html">Saiyan</a></li>
                 <li><a class="dropdown-item active" href="GuerrerosZ.html">Guerreros Z</a></li>
+                <li><a class="dropdown-item" href="Saiyans.html">Saiyans</a></li>
                 <li>
                   <a class="dropdown-item" href="EjercitoDeFreezer.html">Ejército de Freezer</a>
                 </li>
@@ -54,13 +57,7 @@
               <a class="nav-link" href="../descargas/descargas.html">Descargas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html#army-builder">Army Builder</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../faqs/faqs.html">FAQS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html#novedades">Novedades</a>
+              <a class="nav-link" href="../faqs/faqs.html">FAQs</a>
             </li>
           </ul>
         </div>
@@ -68,144 +65,150 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-4 fw-bold">Guerreros Z</h1>
-            <p class="lead">Los Defensores de la Tierra</p>
+    <section class="hero-section text-center text-white">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-4">Guerreros Z</h1>
+            <p class="lead mb-4">Los Defensores de la Tierra</p>
+            <p class="fs-5">
+              Los protagonistas de innumerables batallas épicas. Esta facción se caracteriza por su
+              increíble sinergia, su resiliencia ante la adversidad y su capacidad para lograr
+              hazañas imposibles cuando luchan juntos por un bien superior.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contenido Principal -->
-    <div class="container my-5">
-      <!-- Descripción de la Facción -->
-      <section class="mb-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="lead">
-              Los Guerreros Z son los defensores de la Tierra y los protagonistas de innumerables
-              batallas épicas. Esta facción se caracteriza por su increíble sinergia, su resiliencia
-              ante la adversidad y su capacidad para lograr hazañas imposibles cuando luchan juntos.
-            </p>
+    <!-- Artículos Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Guías y Estrategias</h2>
+            <p class="section-subtitle">Domina las tácticas de los defensores de la Tierra</p>
           </div>
         </div>
-      </section>
 
-      <!-- Artículos y Guías -->
-      <section class="mb-5">
-        <h2 class="text-primary mb-4 text-center">Artículos y Guías</h2>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm card-hover">
+        <div class="row g-4">
+          <!-- Artículo Principal -->
+          <div class="col-md-6 col-lg-8">
+            <div class="card h-100 article-card">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-primary">Guía Completa de Guerreros Z</h5>
+                <span class="badge badge-custom mb-3">Guía de Facción</span>
+                <h3 class="card-title">Unidos por la Esperanza</h3>
                 <p class="card-text">
-                  Todo lo que necesitas saber sobre esta facción: estilo de juego, héroes
-                  destacados, estrategias y tácticas para dominar el campo de batalla.
+                  Descubre los secretos de los Guerreros Z: desde la sinergia entre héroes hasta el
+                  poder de la determinación. Una guía completa para liderar a los defensores de la
+                  Tierra hacia la victoria.
                 </p>
                 <div class="mt-auto">
                   <a href="articulos/guerreros-z-articulo.html" class="btn btn-primary"
-                    >Leer Artículo</a
+                    >Leer Guía Completa</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm card-hover">
+
+          <!-- Artículo Secundario -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 article-card">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Estrategias Avanzadas</h5>
+                <span class="badge badge-secondary mb-3">Próximamente</span>
+                <h5 class="card-title">Tácticas Avanzadas</h5>
                 <p class="card-text">
-                  Aprende tácticas avanzadas, combos devastadores y cómo maximizar la sinergia entre
-                  tus héroes para victorias épicas.
+                  Estrategias específicas para maximizar el potencial de cada héroe de los Guerreros
+                  Z.
                 </p>
                 <div class="mt-auto">
-                  <span class="btn btn-outline-secondary disabled">Próximamente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm card-hover">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Listas de Ejército</h5>
-                <p class="card-text">
-                  Ejemplos de listas competitivas, desde principiantes hasta expertos, con
-                  explicaciones detalladas de cada composición.
-                </p>
-                <div class="mt-auto">
-                  <span class="btn btn-outline-secondary disabled">Próximamente</span>
+                  <button class="btn btn-outline-secondary" disabled>Próximamente</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Personajes Destacados -->
-      <section class="mb-5">
-        <h2 class="text-primary mb-4 text-center">Personajes Destacados</h2>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-3">
-            <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Goku</h5>
-                <p class="card-text small">
-                  El corazón del equipo y líder natural de los Guerreros Z.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-3">
-            <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Piccolo</h5>
-                <p class="card-text small">Estratega y mentor, el cerebro táctico del grupo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-3">
-            <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Gohan</h5>
-                <p class="card-text small">
-                  Poder oculto que se desata en los momentos más críticos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-3">
-            <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Krilin</h5>
-                <p class="card-text small">El terrícola más fuerte, especialista en control.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Navegación -->
-      <div class="text-center">
-        <a href="../../index.html" class="btn btn-outline-primary btn-lg">← Volver al Inicio</a>
       </div>
-    </div>
+    </section>
+
+    <!-- Personajes Destacados -->
+    <section class="py-5 bg-dark">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title text-white">Personajes Icónicos</h2>
+            <p class="section-subtitle text-light">Los héroes de la Tierra</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title text-white">Goku</h5>
+                <p class="card-text text-light">
+                  El corazón del equipo y líder natural de los Guerreros Z. Su espíritu indomable
+                  inspira a todos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title text-white">Piccolo</h5>
+                <p class="card-text text-light">
+                  Estratega y mentor, el cerebro táctico del grupo. Su sabiduría guía las batallas
+                  más difíciles.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title text-white">Gohan</h5>
+                <p class="card-text text-light">
+                  Poder oculto que se desata en los momentos más críticos. El futuro de los
+                  Guerreros Z.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title text-white">Krilin</h5>
+                <p class="card-text text-light">
+                  El terrícola más fuerte, especialista en control y apoyo táctico del equipo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-      <div class="container text-center">
-        <p class="mb-0">&copy; 2025 Sagas Z. Todos los derechos reservados.</p>
-        <p class="small text-white-50">
-          Sagas Z es un proyecto de fans sin ánimo de lucro y no está afiliado con los creadores o
-          propietarios de Dragon Ball.
-        </p>
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="text-white">Sagas Z</h5>
+            <p class="text-light">El juego de miniaturas táctico del universo Dragon Ball Z</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="text-light">&copy; 2024 Sagas Z. Todos los derechos reservados.</p>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
